@@ -7,7 +7,8 @@ namespace LeetCodeSolutions
         static void Main(string[] args)
         {
             // GetMaximumGold();
-            IsSumEquals();
+            // IsSumEquals();
+            MaximumProductOfWordLengths();
         }
 
         /// <summary>
@@ -70,12 +71,12 @@ namespace LeetCodeSolutions
                 new []{19, 10, 0,  0,  34, 0,  2,  0,  0,  27},
                 new []{0,  0,  0,  0,  0,  34, 0,  0,  0,  0}
             };
-            GetMaximumGoldSolution getMaximumGoldSolution = new GetMaximumGoldSolution();
-            Console.WriteLine(getMaximumGoldSolution.GetMaximumGold(grid));
+            M1219PathWithMaximumGold m1219PathWithMaximumGold = new M1219PathWithMaximumGold();
+            Console.WriteLine(m1219PathWithMaximumGold.GetMaximumGold(grid));
         }
         static void IsSumEquals()
         {
-            IsSumEqualSolution isSumEqualSolution = new IsSumEqualSolution();
+            S1880CheckIfWordEqualsSummationOfTwoWords s1880CheckIfWordEqualsSummationOfTwoWords = new S1880CheckIfWordEqualsSummationOfTwoWords();
             string firstWord, secondWord, targetWord;
             // firstWord = "acb";
             // secondWord = "cba";
@@ -88,7 +89,28 @@ namespace LeetCodeSolutions
             firstWord = "aaa";
             secondWord = "a";
             targetWord = "aaaa";
-            Console.Write(isSumEqualSolution.IsSumEqual(firstWord,secondWord,targetWord));
+            Console.Write(s1880CheckIfWordEqualsSummationOfTwoWords.IsSumEqual(firstWord,secondWord,targetWord));
+        }
+
+        static void MaximumProductOfWordLengths()
+        {
+            // string[] words =
+            // {
+            //     "abcw", "baz", "foo", "bar", "xtfn", "abcdef"
+            // };
+
+            // string[] words =
+            // {
+            //     "a", "ab", "abc", "d", "cd", "bcd", "abcd"
+            // };
+
+            string[] words =
+            {
+                "a", "aa", "aaa", "aaaa"
+            };
+            
+            M318MaximumProductofWordLengths maximumProductofWordLengths = new M318MaximumProductofWordLengths();
+            Console.Write(maximumProductofWordLengths.MaxProduct(words));
         }
     }
 }

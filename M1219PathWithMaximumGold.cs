@@ -42,7 +42,7 @@ namespace LeetCodeSolutions
     /// <summary>
     /// https://leetcode-cn.com/problems/path-with-maximum-gold/
     /// </summary>
-    public class GetMaximumGoldSolution
+    public class M1219PathWithMaximumGold
     {
         private Tree[] trees;
         private Stack<int> path;

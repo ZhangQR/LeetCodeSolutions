@@ -3,11 +3,14 @@ using System.Collections.Generic;
 
 namespace LeetCodeSolutions
 {
-    public class IsSumEqualSolution
+    /// <summary>
+    /// https://leetcode-cn.com/problems/check-if-word-equals-summation-of-two-words/
+    /// </summary>
+    public class S1880CheckIfWordEqualsSummationOfTwoWords
     {
         public bool IsSumEqual(string firstWord, string secondWord, string targetWord) 
         {
-            // Console.Write(GetLetterValue('j'));
+            Console.Write(GetLetterValue('z'));
             // Console.Write(GetNumericalValue("abcd"));
             return GetNumericalValue(firstWord)+GetNumericalValue(secondWord) == GetNumericalValue(targetWord);
         }
