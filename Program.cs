@@ -8,11 +8,13 @@ namespace LeetCodeSolutions
         {
             // GetMaximumGold();
             // IsSumEquals();
-            MaximumProductOfWordLengths();
+            // MaximumProductOfWordLengths();
+            // BinaryTreeTilt();
+            IntegerReplacement();
         }
 
         /// <summary>
-        /// dfs+回溯 获得最大值
+        /// 中等：dfs+回溯 获得最大值
         /// https://leetcode-cn.com/problems/path-with-maximum-gold/
         /// </summary>
         static void GetMaximumGold()
@@ -74,6 +76,10 @@ namespace LeetCodeSolutions
             M1219PathWithMaximumGold m1219PathWithMaximumGold = new M1219PathWithMaximumGold();
             Console.WriteLine(m1219PathWithMaximumGold.GetMaximumGold(grid));
         }
+        
+        /// <summary>
+        /// 简单：https://leetcode-cn.com/problems/check-if-word-equals-summation-of-two-words/
+        /// </summary>
         static void IsSumEquals()
         {
             S1880CheckIfWordEqualsSummationOfTwoWords s1880CheckIfWordEqualsSummationOfTwoWords = new S1880CheckIfWordEqualsSummationOfTwoWords();
@@ -92,6 +98,10 @@ namespace LeetCodeSolutions
             Console.Write(s1880CheckIfWordEqualsSummationOfTwoWords.IsSumEqual(firstWord,secondWord,targetWord));
         }
 
+        /// <summary>
+        /// 中等：按位与操作
+        /// https://leetcode-cn.com/problems/maximum-product-of-word-lengths/
+        /// </summary>
         static void MaximumProductOfWordLengths()
         {
             // string[] words =
@@ -111,6 +121,38 @@ namespace LeetCodeSolutions
             
             M318MaximumProductofWordLengths maximumProductofWordLengths = new M318MaximumProductofWordLengths();
             Console.Write(maximumProductofWordLengths.MaxProduct(words));
+        }
+
+        /// <summary>
+        /// 简单：二叉树输出
+        /// https://leetcode-cn.com/problems/binary-tree-tilt/submissions/
+        /// </summary>
+        static void BinaryTreeTilt()
+        {
+            // int[] input = {4, 2, 9, 3, 5, 10, 7};
+            // int[] input = {1,2};
+            // int[] input = {1,2,3,4,5};
+            int[] input = {-8,-6,7,6,0,0,0,0,5};
+            
+            S563BinaryTreeTilt.TreeNode tree = new S563BinaryTreeTilt.TreeNode(input);
+            tree.left.left.left = null;
+            tree.left.right = null;
+            tree.right.left = null;
+            tree.right.right = null;
+            S563BinaryTreeTilt s563BinaryTreeTilt = new S563BinaryTreeTilt();
+            // S563BinaryTreeTilt.PrintBinaryTree(tree);
+            Console.Write(s563BinaryTreeTilt.FindTilt(tree));
+        }
+
+        /// <summary>
+        /// 中等：整数替换
+        /// https://leetcode-cn.com/problems/integer-replacement/
+        /// </summary>
+        static void IntegerReplacement()
+        {
+            M397IntegerReplacement m397IntegerReplacement = new M397IntegerReplacement();
+            int result = m397IntegerReplacement.IntegerReplacement(2147483647);
+            Console.Write(result);
         }
     }
 }
