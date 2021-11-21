@@ -10,7 +10,53 @@ namespace LeetCodeSolutions
             // IsSumEquals();
             // MaximumProductOfWordLengths();
             // BinaryTreeTilt();
-            IntegerReplacement();
+            // IntegerReplacement();
+            // O1();
+            //O2Solution.answer(1241);
+            // O3();
+            // O4();
+            // LongestHarmoniousSubsequence();
+        }
+
+        public static void LongestHarmoniousSubsequence()
+        {
+            // int[] input = {1, 3, 2, 2, 5, 2, 3, 7};
+            int[] input = {1, 2, 3, 4};
+            //int[] input = {1, 1, 1, 1};
+            //int[] input = {1, 2, 2, 1};
+            Console.Write(new S594LongestHarmoniousSubsequence().FindLHS(input));
+        }
+        
+        public static void O1()
+        {
+            int[] x = new int[10];
+            for (int i = 1; i <= x.Length; i++)
+            {
+                x[i - 1] = i;
+            }
+
+            x = new[] {85, 398, 421, 189, 30,87};
+
+            var answer = LeetCodeSolutions.O1.answer(x);
+            Console.Write(answer[0]);
+            
+            // part2
+            // int[] input = new[] {1, 2, 3, 4};
+            // int answer = LeetCodeSolutions.O1.part2(input);
+            // Console.Write(answer);
+            
+            // part3
+            // int input = 72;
+            // LeetCodeSolutions.O1.part3(input);
+        }
+        
+        static void O3()
+        {
+            LeetCodeSolutions.O3 o1 = new O3();
+        }
+        static void O4()
+        {
+            LeetCodeSolutions.O4 o1 = new O4();
         }
 
         /// <summary>
@@ -154,5 +200,7 @@ namespace LeetCodeSolutions
             int result = m397IntegerReplacement.IntegerReplacement(2147483647);
             Console.Write(result);
         }
+
+
     }
 }
