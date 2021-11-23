@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace LeetCodeSolutions
 {
@@ -16,6 +17,17 @@ namespace LeetCodeSolutions
             // O3();
             // O4();
             // LongestHarmoniousSubsequence();
+            BuddyString();
+        }
+
+        /// <summary>
+        /// S 交换两个字母判断是否相等
+        /// </summary>
+        public static void BuddyString()
+        {
+            string s1 = "abab";
+            string s2 = "abab";
+            Console.Write(S859BuddyStrings.BuddyStrings(s1, s2));
         }
 
         public static void LongestHarmoniousSubsequence()

@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace LeetCodeSolutions
 {
@@ -8,7 +9,7 @@ namespace LeetCodeSolutions
         public class Node
         {
             public int val;
-            public IList<Node> children;
+            public List<Node> children;
 
             public Node()
             {
@@ -19,7 +20,7 @@ namespace LeetCodeSolutions
                 val = _val;
             }
 
-            public Node(int _val, IList<Node> _children)
+            public Node(int _val, List<Node> _children)
             {
                 val = _val;
                 children = _children;
