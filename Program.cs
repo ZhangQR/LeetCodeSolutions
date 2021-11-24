@@ -17,7 +17,21 @@ namespace LeetCodeSolutions
             // O3();
             // O4();
             // LongestHarmoniousSubsequence();
-            BuddyString();
+            // BuddyString();
+            ReconstructOriginalDigitsfromEnglish();
+        }
+
+        /// <summary>
+        /// M 将打乱的英文数字还原
+        /// https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/
+        /// </summary>
+        public static void ReconstructOriginalDigitsfromEnglish()
+        {
+            // string input = "owoztneoer";
+            string input = "fviefuro";
+            M423ReconstructOriginalDigitsFromEnglish m423ReconstructOriginalDigitsFromEnglish =
+                new M423ReconstructOriginalDigitsFromEnglish();
+            Console.Write(m423ReconstructOriginalDigitsFromEnglish.OriginalDigits(input));
         }
 
         /// <summary>
