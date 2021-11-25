@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Threading;
 
 namespace LeetCodeSolutions
 {
@@ -18,7 +19,18 @@ namespace LeetCodeSolutions
             // O4();
             // LongestHarmoniousSubsequence();
             // BuddyString();
-            ReconstructOriginalDigitsfromEnglish();
+            // ReconstructOriginalDigitsfromEnglish();
+            PoorPigs();
+        }
+
+        /// <summary>
+        /// H 毒药喂猪
+        /// https://leetcode-cn.com/problems/poor-pigs/
+        /// </summary>
+        public static void PoorPigs()
+        {
+            H458PoorPigs h458PoorPigs = new H458PoorPigs();
+            Console.Write(h458PoorPigs.PoorPigs(1000, 15, 60));
         }
 
         /// <summary>
