@@ -20,7 +20,24 @@ namespace LeetCodeSolutions
             // LongestHarmoniousSubsequence();
             // BuddyString();
             // ReconstructOriginalDigitsfromEnglish();
-            PoorPigs();
+            // PoorPigs();
+            RandomFlipMatrix();
+        }
+
+        /// <summary>
+        /// M 随机翻牌二维数组
+        /// 时间和内存都有卡点，不需要 matrix[m,n],reset 的时候也不需要重置 record 数组
+        /// https://leetcode-cn.com/problems/random-flip-matrix/
+        /// </summary>
+        public static void RandomFlipMatrix()
+        {
+            int m = 3, n = 1;
+            M519RandomFlipMatrix.Solution m519RandomFlipMatrix = new M519RandomFlipMatrix.Solution(m,n);
+            Console.Write(m519RandomFlipMatrix.Flip());
+            Console.Write(m519RandomFlipMatrix.Flip());
+            Console.Write(m519RandomFlipMatrix.Flip());
+            m519RandomFlipMatrix.Reset();
+            Console.Write(m519RandomFlipMatrix.Flip());
         }
 
         /// <summary>
