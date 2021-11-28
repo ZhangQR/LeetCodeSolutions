@@ -21,7 +21,22 @@ namespace LeetCodeSolutions
             // BuddyString();
             // ReconstructOriginalDigitsfromEnglish();
             // PoorPigs();
-            RandomFlipMatrix();
+            // RandomFlipMatrix();
+            // LeetCodeSolutions.O4.ListTest();
+            FindAllAnagramsInaString();
+        }
+
+        /// <summary>
+        /// M 乱序一个要想到排序，一个就是只记录数量，这里排序会超时（JAVA 同样的写法竟然不会），所以使用第二种滑动窗口来做
+        /// https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/
+        /// </summary>
+        public static void FindAllAnagramsInaString()
+        {
+            string s = "cbaebabacd";
+            string p = "abc";
+            // string s = "abab", p = "ab";
+            M438FindAllAnagramsInaString m438FindAllAnagramsInaString = new M438FindAllAnagramsInaString();
+            m438FindAllAnagramsInaString.FindAnagrams(s, p);
         }
 
         /// <summary>
