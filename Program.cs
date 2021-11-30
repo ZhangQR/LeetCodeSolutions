@@ -23,7 +23,37 @@ namespace LeetCodeSolutions
             // PoorPigs();
             // RandomFlipMatrix();
             // LeetCodeSolutions.O4.ListTest();
-            FindAllAnagramsInaString();
+            // FindAllAnagramsInaString();
+            // KthSmallestPrimeFraction();
+            // NthDigit();
+        }
+
+        /// <summary>
+        /// H 减去基数，再 mod，注意数据范围
+        /// https://leetcode-cn.com/problems/nth-digit/
+        /// </summary>
+        public static void NthDigit()
+        {
+            M400NthDigit m400NthDigit = new M400NthDigit();
+            // Console.Write(m400NthDigit.FindNthDigit(3));
+            Console.Write(m400NthDigit.FindNthDigit(1000000000));
+        }
+
+        /// <summary>
+        /// H 如果要找第几大/小的元素，可以考虑优先队列
+        /// https://leetcode-cn.com/problems/k-th-smallest-prime-fraction/
+        /// </summary>
+        public static void KthSmallestPrimeFraction()
+        {
+            // int[] input = {1, 2, 3, 5};
+            // int k = 3;
+            // int[] input = {1, 7};
+            // int k = 1;
+            int[] input = {1,19,97,101,107,163,191,251,271,641,661,787,811,919,1123,1567,1571,2239,2251,2309,2389,2467,2609,2837,2843,2861,2969,3001,3221,3361,3623,3691,3823,3833,4129,4519,4523,4733,4903,5297,5641,5749,6053,6101,6257,6301,6373,6389,6781,6917,6949,7151,7213,7307,7331,7349,7433,7481,7573,7649,7673,8369,8539,8573,8609,8663,8861,9137,9239,9533,9547,9923,10457,10499,10627,10781,10837,10861,10883,11177,11257,11393,11489,11777,11933,11969,12161,12263,12301,12517,13099,13267,13627,13649,13759,13789,13829,13913,13933,14143,14221,14419,14591,14627,14669,14923,15091,15497,15559,15581,15661,15731,16061,16067,16111,16141,16217,16661,16747,16981,17299,17573,17903,17957,18013,18517,18521,18859,19301,19333,19553,19571,19583,19717,19777,19841,19843,19963,20333,20483,20521,20563,20641,20731,20873,20897,21139,21143,21149,21379,21577,21701,21787,21839,22027,22367,22397,22433,22637,22691,22697,23159,23293,23369,23473,24029,24181,24407,24631,25037,25339,25367,25469,25951,26111,26203,26267,26423,26539,26641,26647,26693,26813,26981,27109,27449,27653,27883,28349,28477,28643,28661,28921,29243,29339,29483,29819,29851,29863,29917};
+            int k = 17993;
+            H786KthSmallestPrimeFraction h786KthSmallestPrimeFraction = new H786KthSmallestPrimeFraction();
+            int[] array = h786KthSmallestPrimeFraction.KthSmallestPrimeFraction(input, k);
+            Console.Write($"{array[0]},{array[1]}");
         }
 
         /// <summary>
