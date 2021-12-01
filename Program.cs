@@ -26,6 +26,19 @@ namespace LeetCodeSolutions
             // FindAllAnagramsInaString();
             // KthSmallestPrimeFraction();
             // NthDigit();
+            MaxPower();
+        }
+
+        /// <summary>
+        /// S 找到最长连续子串
+        /// https://leetcode-cn.com/problems/consecutive-characters/
+        /// </summary>
+        public static void MaxPower()
+        {
+            S1446ConsecutiveCharacters s1446ConsecutiveCharacters = new S1446ConsecutiveCharacters();
+            // int output = s1446ConsecutiveCharacters.MaxPower("leetcode");
+            int output = s1446ConsecutiveCharacters.MaxPower("ee");
+            Console.Write(output);
         }
 
         /// <summary>
