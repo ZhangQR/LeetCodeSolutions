@@ -26,7 +26,23 @@ namespace LeetCodeSolutions
             // FindAllAnagramsInaString();
             // KthSmallestPrimeFraction();
             // NthDigit();
-            MaxPower();
+            // MaxPower();
+            FindRelativeRanks();
+        }
+
+        /// <summary>
+        /// S 输出排名
+        /// https://leetcode-cn.com/problems/relative-ranks/
+        /// </summary>
+        public static void FindRelativeRanks()
+        {
+            // S506RelativeRanks s506RelativeRanks = new S506RelativeRanks();
+            // int[] scores = {10, 3, 8, 9, 4};
+            // s506RelativeRanks.FindRelativeRanks(scores);
+            
+            S506RelativeRanks2 s506RelativeRanks = new S506RelativeRanks2();
+            int[] scores = {10, 3, 8, 9, 4};
+            s506RelativeRanks.FindRelativeRanks(scores);
         }
 
         /// <summary>
