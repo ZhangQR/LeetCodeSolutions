@@ -27,7 +27,44 @@ namespace LeetCodeSolutions
             // KthSmallestPrimeFraction();
             // NthDigit();
             // MaxPower();
-            FindRelativeRanks();
+            // FindRelativeRanks();
+            // MaximizeSumOfArrayAfterKNegations();
+        }
+
+        /// <summary>
+        /// S 超简单(个屁！好多坑！！！)
+        /// https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/ 
+        /// </summary>
+        public static void MaximizeSumOfArrayAfterKNegations()
+        {
+            S1005MaximizeSumOfArrayAfterKNegations sumOfArrayAfterKNegations
+                = new S1005MaximizeSumOfArrayAfterKNegations();
+            // int[] input = new int[]
+            // {
+            //     2, -3, -1, 5, -4
+            // };
+            // int k = 2;
+            // int[] input = new int[]
+            // {
+            //     4, 2, 3
+            // };
+            // int k = 1;
+            // int[] input = new int[]
+            // {
+            //     -2, 9, 9, 8, 4
+            // };
+            // int k = 5;
+            // int[] input = new int[]
+            // {
+            //     -8, 3, -5, -3, -5, -2
+            // };
+            // int k = 6;
+            int[] input = new int[]
+            {
+                -4, -2, -3
+            };
+            int k = 4;
+            sumOfArrayAfterKNegations.LargestSumAfterKNegations(input,k);
         }
 
         /// <summary>
