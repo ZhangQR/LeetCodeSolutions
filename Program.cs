@@ -32,6 +32,18 @@ namespace LeetCodeSolutions
         }
 
         /// <summary>
+        /// 超简单，S 把 magazine 上的字符 record 一下，然后 遍历 randomNote 即可
+        /// https://leetcode-cn.com/problems/ransom-note/
+        /// </summary>
+        public static void RansomNote()
+        {
+            string ransomNote = "aa";
+            string magazine = "aab";
+            S383RansomNote s383RansomNote = new S383RansomNote();
+            s383RansomNote.CanConstruct(ransomNote,magazine);
+        }
+
+        /// <summary>
         /// S 超简单(个屁！好多坑！！！)
         /// https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/ 
         /// </summary>
