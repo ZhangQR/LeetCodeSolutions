@@ -29,7 +29,20 @@ namespace LeetCodeSolutions
             // MaxPower();
             // FindRelativeRanks();
             // MaximizeSumOfArrayAfterKNegations();
-            SuperPow();
+            // SuperPow();
+            TruncateSentence();
+        }
+        
+        /// <summary>
+        /// S 简单
+        /// https://leetcode-cn.com/problems/truncate-sentence/
+        /// </summary>
+        public static void TruncateSentence()
+        {
+            string input = "What is the solution to this problem";
+            int k = 4;
+            S1816TruncateSentence s1816TruncateSentence = new S1816TruncateSentence();
+            Console.Write(s1816TruncateSentence.TruncateSentence(input,k));
         }
 
         /// <summary>
@@ -75,6 +88,7 @@ namespace LeetCodeSolutions
             S383RansomNote s383RansomNote = new S383RansomNote();
             s383RansomNote.CanConstruct(ransomNote,magazine);
         }
+        
 
         /// <summary>
         /// S 超简单(个屁！好多坑！！！)
