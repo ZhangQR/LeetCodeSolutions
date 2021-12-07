@@ -30,7 +30,40 @@ namespace LeetCodeSolutions
             // FindRelativeRanks();
             // MaximizeSumOfArrayAfterKNegations();
             // SuperPow();
-            TruncateSentence();
+            // TruncateSentence();
+            ColoringABorder();
+        }
+        
+        /// <summary>
+        /// M BFS
+        /// https://leetcode-cn.com/problems/coloring-a-border/
+        /// </summary>
+        public static void ColoringABorder()
+        {
+            // int[][] input = new[]
+            // {
+            //     new int[] {1, 1},
+            //     new int[] {1, 2}
+            // };
+            // int row = 0, col = 0, color = 3;
+
+            // int[][] input = new[]
+            // {
+            //     new int[] {1, 1, 1},
+            //     new int[] {1, 1, 1},
+            //     new int[] {1, 1, 1}
+            // };
+            // int row = 1, col = 1, color = 3;
+
+            int[][] input = new[]
+            {
+                new int[] {1, 2, 1, 2, 1, 2},
+                new int[] {2, 2, 2, 2, 1, 2},
+                new int[] {1, 2, 2, 2, 1, 2}
+            };
+            int row = 1, col = 3, color = 1;
+            M1034ColoringABorder m1034ColoringABorder = new M1034ColoringABorder();
+            m1034ColoringABorder.ColorBorder(input,row,col,color);
         }
         
         /// <summary>
@@ -44,6 +77,7 @@ namespace LeetCodeSolutions
             S1816TruncateSentence s1816TruncateSentence = new S1816TruncateSentence();
             Console.Write(s1816TruncateSentence.TruncateSentence(input,k));
         }
+        
 
         /// <summary>
         /// M 快速幂
